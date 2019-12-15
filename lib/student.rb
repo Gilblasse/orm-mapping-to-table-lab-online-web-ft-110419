@@ -18,13 +18,20 @@ class Student
     DB[:conn].execute(sql)
   end
   
+<<<<<<< HEAD
   def self.drop_table
     sql = <<-SQL 
     DROP TABLE IF EXISTS students
+=======
+  def self.drop
+    sql = <<-SQL 
+    DROP TABLE students
+>>>>>>> 2156898b50c47ea89b1084378de610742bfb7412
     SQL
     DB[:conn].execute(sql)
   end
   
+<<<<<<< HEAD
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade) 
@@ -41,6 +48,8 @@ class Student
     student.save
     student
   end
+=======
+>>>>>>> 2156898b50c47ea89b1084378de610742bfb7412
   
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]  
